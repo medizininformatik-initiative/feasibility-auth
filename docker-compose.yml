@@ -11,7 +11,7 @@ services:
     volumes:
       - "db:/var/lib/postgresql/data"
 
-  zars-keycloak:
+  auth:
     image: jboss/keycloak:16.1.1
     restart: unless-stopped
     environment:
