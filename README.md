@@ -18,12 +18,12 @@ with either _./init/initial-realm-dev.json_ for develop (default setting) or _./
 
 ### Users (dev only)
 
-| User                  | Password | Role                      |
-|-----------------------|----------|---------------------------|
-| admin                 | admin    | Administrator of Keycloak |
-| feasibility-developer | codex    | FEASIBILITY_USER          | 
-| user1                 | codex    | FEASIBILITY_USER          | 
-| user2                 | codex    | FEASIBILITY_USER          | 
+| User                  | Password    | Role                      |
+|-----------------------|-------------|---------------------------|
+| admin                 | admin       | Administrator of Keycloak |
+| feasibility-developer | feasibility | FEASIBILITY_USER          | 
+| user1                 | feasibility       | FEASIBILITY_USER          | 
+| user2                 | feasibility       | FEASIBILITY_USER          | 
 
 ### Clients
 
