@@ -1,7 +1,7 @@
 {
-  "id": "codex-develop",
-  "realm": "codex-develop",
-  "displayName": "codex develop realm",
+  "id": "feasibility-develop",
+  "realm": "feasibility-develop",
+  "displayName": "feasibility develop realm",
   "notBefore": 0,
   "defaultSignatureAlgorithm": "RS256",
   "revokeRefreshToken": false,
@@ -48,16 +48,25 @@
     "realm": [
       {
         "id": "234d9488-fd72-47ff-aaaa-9182cf4e9c94",
-        "name": "CODEX_USER",
+        "name": "FEASIBILITY_USER",
+        "description": "this is for development purposes only and allows access to all user features",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "feasibility-develop",
+        "attributes": {}
+      },
+      {
+        "id": "234d9488-fd72-47ff-aaaa-9182cf4e9c95",
+        "name": "FEASIBILITY_ADMIN",
         "description": "this is for development purposes only and allows full access to all features",
         "composite": false,
         "clientRole": false,
-        "containerId": "codex-develop",
+        "containerId": "feasibility-develop",
         "attributes": {}
       },
       {
         "id": "7d988f33-e10a-437c-9470-fa817fce27fd",
-        "name": "default-roles-codex-develop",
+        "name": "default-roles-feasibility-develop",
         "description": "${role_default-roles}",
         "composite": true,
         "composites": {
@@ -73,7 +82,7 @@
           }
         },
         "clientRole": false,
-        "containerId": "codex-develop",
+        "containerId": "feasibility-develop",
         "attributes": {}
       },
       {
@@ -82,7 +91,7 @@
         "description": "${role_uma_authorization}",
         "composite": false,
         "clientRole": false,
-        "containerId": "codex-develop",
+        "containerId": "feasibility-develop",
         "attributes": {}
       },
       {
@@ -91,7 +100,7 @@
         "description": "${role_offline-access}",
         "composite": false,
         "clientRole": false,
-        "containerId": "codex-develop",
+        "containerId": "feasibility-develop",
         "attributes": {}
       }
     ],
@@ -412,11 +421,11 @@
   "groups": [
     {
       "id": "cce70ab0-7355-4210-baf7-93d07343f852",
-      "name": "codex-develop",
-      "path": "/codex-develop",
+      "name": "feasibility-develop",
+      "path": "/feasibility-develop",
       "attributes": {},
       "realmRoles": [
-        "CODEX_USER"
+        "FEASIBILITY_USER"
       ],
       "clientRoles": {},
       "subGroups": []
@@ -424,11 +433,11 @@
   ],
   "defaultRole": {
     "id": "7d988f33-e10a-437c-9470-fa817fce27fd",
-    "name": "default-roles-codex-develop",
+    "name": "default-roles-feasibility-develop",
     "description": "${role_default-roles}",
     "composite": true,
     "clientRole": false,
-    "containerId": "codex-develop"
+    "containerId": "feasibility-develop"
   },
   "requiredCredentials": [
     "password"
@@ -471,11 +480,11 @@
     {
       "id" : "654df1f8-3025-4351-b79d-c067c7021f60",
       "createdTimestamp" : 1609928667083,
-      "username" : "codex-developer",
+      "username" : "feasibility-developer",
       "enabled" : true,
       "totp" : false,
       "emailVerified" : false,
-      "firstName" : "Codex",
+      "firstName" : "Feasibility",
       "lastName" : "Developer",
       "credentials" : [ {
         "id" : "129eab44-8297-488c-93cd-2db12ea13e31",
@@ -491,7 +500,7 @@
         "account" : [ "view-profile", "manage-account" ]
       },
       "notBefore" : 0,
-      "groups" : [ "/codex-develop" ]
+      "groups" : [ "/feasibility-develop" ]
     },
     {
       "id": "e110ea20-bb3f-439f-b17e-40b4f378c366",
@@ -608,7 +617,7 @@
         "account" : [ "view-profile", "manage-account" ]
       },
       "notBefore" : 0,
-      "groups" : [ "/codex-develop" ]
+      "groups" : [ "/feasibility-develop" ]
     }, {
       "id" : "45076e8b-99d0-41f4-b0a6-763cbedd6d5d",
       "createdTimestamp" : 1611824915622,
@@ -632,7 +641,7 @@
         "account" : [ "view-profile", "manage-account" ]
       },
       "notBefore" : 0,
-      "groups" : [ "/codex-develop" ]
+      "groups" : [ "/feasibility-develop" ]
     }
   ],
   "scopeMappings": [
@@ -659,14 +668,14 @@
       "clientId": "account",
       "name": "${client_account}",
       "rootUrl": "${authBaseUrl}",
-      "baseUrl": "/realms/codex-develop/account/",
+      "baseUrl": "/realms/feasibility-develop/account/",
       "surrogateAuthRequired": false,
       "enabled": true,
       "alwaysDisplayInConsole": false,
       "clientAuthenticatorType": "client-secret",
       "secret": "**********",
       "redirectUris": [
-        "/realms/codex-develop/account/*"
+        "/realms/feasibility-develop/account/*"
       ],
       "webOrigins": [],
       "notBefore": 0,
@@ -701,14 +710,14 @@
       "clientId": "account-console",
       "name": "${client_account-console}",
       "rootUrl": "${authBaseUrl}",
-      "baseUrl": "/realms/codex-develop/account/",
+      "baseUrl": "/realms/feasibility-develop/account/",
       "surrogateAuthRequired": false,
       "enabled": true,
       "alwaysDisplayInConsole": false,
       "clientAuthenticatorType": "client-secret",
       "secret": "**********",
       "redirectUris": [
-        "/realms/codex-develop/account/*"
+        "/realms/feasibility-develop/account/*"
       ],
       "webOrigins": [],
       "notBefore": 0,
@@ -1547,14 +1556,14 @@
       "clientId": "security-admin-console",
       "name": "${client_security-admin-console}",
       "rootUrl": "${authAdminUrl}",
-      "baseUrl": "/admin/codex-develop/console/",
+      "baseUrl": "/admin/feasibility-develop/console/",
       "surrogateAuthRequired": false,
       "enabled": true,
       "alwaysDisplayInConsole": false,
       "clientAuthenticatorType": "client-secret",
       "secret": "**********",
       "redirectUris": [
-        "/admin/codex-develop/console/*"
+        "/admin/feasibility-develop/console/*"
       ],
       "webOrigins": [
         "+"
