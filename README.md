@@ -11,8 +11,14 @@ Please see [the documentation over at keycloak.org](https://www.keycloak.org/ser
 
 ### Users
 
-There are no users created in the imported realm. You need to create the users on your own and assign
+There are no users created in the default imported realm. You need to create the users on your own and assign
 the respective roles to them. The roles however are already configured.
+
+For development purposes, **and ONLY for development purposes**, there is a `feasibility-realm.json.dev` file that 
+contains 3 predefined users. `admin`, `user` and `poweruser`, with pre-assigned roles (poweruser is assigned as user
+_and_ poweruser).
+If you want to use this, and are aware of what you are doing, simple rename the file `feasibility-realm.json.dev` to
+`feasibility-realm.json`. Please note that you still have to log in as admin and assign credentials to those users.
 
 ### Clients
 
